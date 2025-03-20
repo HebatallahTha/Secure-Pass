@@ -1,49 +1,46 @@
-# User Password Manager
+## 🔐 Password Manager
 
-## Overview
-The **User Password Manager** is a C++ program designed to help users create, validate, and encrypt passwords securely. It enforces strong password policies and prevents the reuse of previously used passwords.
+This **C program** is a **Password Manager**, allowing users to securely store, retrieve, and manage their passwords. It provides encryption for stored passwords, ensuring security and privacy. The program enables users to create new password entries, view stored passwords, and delete passwords as needed.
 
-## Features
-- **Password Creation**: Users are prompted to create a password.
-- **Validation**: The password must contain at least:
-  - One uppercase letter
-  - One lowercase letter
-  - One digit
-  - One special character
-  - A minimum length of 8 characters
-- **History Check**: Prevents the reuse of previously used passwords.
-- **Offset Calculation**: Computes offsets based on ASCII values.
-- **Encryption**: Generates an encrypted version of the password using offset calculations.
+## ✨ Features  
+- 🔏 **Secure Password Storage:** Saves passwords in an encrypted format.  
+- 🔑 **User Authentication:** Requires a master password to access stored passwords.  
+- 🔍 **Password Retrieval:** Allows users to search and view their saved credentials.  
+- 🗑️ **Password Deletion:** Enables users to remove stored passwords.  
+- 🖥️ **User-friendly Interface:** Provides clear prompts and intuitive navigation.  
 
-## How It Works
-1. The user is prompted to enter a password.
-2. The password is validated using a regex pattern.
-3. If valid, the password is encrypted based on ASCII offsets.
-4. The encrypted password is displayed.
-5. Users can change their password by entering a new valid password.
+## 🚀 How to Run  
 
-## Code Structure
-### Classes
-- `UserPasswordManager`
-  - `createPassword()`: Prompts the user to enter a password.
-  - `validatePassword()`: Ensures the password meets security requirements.
-  - `calculateOffsets()`: Computes ASCII-based offsets for encryption.
-  - `encryptPassword()`: Uses offsets to encrypt the password.
-  - `changePassword()`: Allows the user to update their password.
+1. Clone the repository:  
+    ```bash
+    git clone <repository_url>
+    ```  
 
-## Technologies Used
-- **C++ STL**: `vector`, `string`, `iostream`, `regex`
+2. Navigate into the project directory:  
+    ```bash
+    cd password-manager
+    ```  
 
-## Example Usage
-```cpp
-UserPasswordManager manager;
-```
-When executed, the program will prompt the user to create a password, validate it, and display the encrypted password.
+3. Compile the C program:  
+    ```bash
+    gcc password_manager.c -o password_manager
+    ```  
 
-## Future Enhancements
-- Implement salting and hashing for improved security.
-- Store encrypted passwords in a file or database.
-- Add a user authentication system.
+4. Run the program:  
+    ```bash
+    ./password_manager
+    ```  
 
-## Author
-**Heba**
+## 📂 File Structure  
+
+- 📜 `password_manager.c` - The C source file containing the password management logic.  
+- 📖 `README.md` - This file, containing details about the project.  
+- 🔐 `passwords.dat` - The encrypted file where passwords are stored.  
+
+## 📜 License  
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.  
+
+---
+
+🔒 **Stay secure and keep your passwords safe!** 🔑  
