@@ -1,6 +1,6 @@
 ## 🔐 Password Manager
 
-This **C program** is a **Password Manager**, allowing users to securely store, retrieve, and manage their passwords. It provides encryption for stored passwords, ensuring security and privacy. The program enables users to create new password entries, view stored passwords, and delete passwords as needed.
+This **C++ program** is a **Password Manager**, allowing users to securely store, retrieve, and manage their passwords. It provides encryption for stored passwords, ensuring security and privacy. The program enables users to create new password entries, view stored passwords, and delete passwords as needed.
 
 ## ✨ Features  
 - 🔏 **Secure Password Storage:** Saves passwords in an encrypted format.  
@@ -21,9 +21,9 @@ This **C program** is a **Password Manager**, allowing users to securely store, 
     cd password-manager
     ```  
 
-3. Compile the C program:  
+3. Compile the C++ program:  
     ```bash
-    gcc password_manager.c -o password_manager
+    g++ password_manager.cpp -o password_manager
     ```  
 
 4. Run the program:  
@@ -33,7 +33,7 @@ This **C program** is a **Password Manager**, allowing users to securely store, 
 
 ## 📂 File Structure  
 
-- 📜 `password_manager.c` - The C source file containing the password management logic.  
+- 📜 `password_manager.cpp` - The C++ source file containing the password management logic.  
 - 📖 `README.md` - This file, containing details about the project.  
 - 🔐 `passwords.dat` - The encrypted file where passwords are stored.  
 
@@ -43,4 +43,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-🔒 **Stay secure and keep your passwords safe!** 🔑  
+🔒 **Stay secure and keep your passwords safe!** 🔑
